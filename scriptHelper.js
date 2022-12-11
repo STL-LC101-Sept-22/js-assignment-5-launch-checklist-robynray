@@ -25,7 +25,7 @@ function validateInput(testInput) {
     } else if (isNaN(numInput)) {
         return "Not a Number";
     } else if (isNaN(numInput) === false) {
-        return "Is a Number"
+        return "Is a Number";
     }
 
 }
@@ -46,7 +46,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
 
     } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-        window.alert("Enter valid input for each field"); {
+       window.alert("Enter valid input for each field"); {
             //     list.style.visibility = "hidden"
             // 
         }
@@ -129,4 +129,5 @@ module.exports.validateInput = validateInput;
 module.exports.formSubmission = formSubmission;
 module.exports.pickPlanet = pickPlanet;
 module.exports.myFetch = myFetch;
+
 
