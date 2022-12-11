@@ -18,12 +18,13 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
+
     // list.style.visibility = "hidden"
     if (testInput === "") {
         return "Empty";
-    } else if (isNaN(Number.testInput)) {
+    } else if (Number.isNaN(testInput)) {
         return "Not a Number";
-    } else if (!isNaN(Number.testInput)) {
+    } else if (!Number.isNaN(testInput)) {
         return "Is a Number";
     }
 
@@ -45,7 +46,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
 
     } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-        window.alert("Enter valid input for each field"); {
+       window.alert("Enter valid input for each field"); {
             //     list.style.visibility = "hidden"
             // 
         }
