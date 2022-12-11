@@ -18,7 +18,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-
+let testInput = Number;
     // list.style.visibility = "hidden"
     if (testInput === "") {
         return "Empty";
