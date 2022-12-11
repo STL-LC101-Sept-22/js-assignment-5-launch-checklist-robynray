@@ -21,9 +21,9 @@ function validateInput(testInput) {
     // list.style.visibility = "hidden"
     if (testInput === "") {
         return "Empty";
-    } else if (Number.isNaN(testInput)) {
+    } else if (isNaN(Number.testInput)) {
         return "Not a Number";
-    } else if (!Number.isNaN(testInput)) {
+    } else if (!isNaN(Number.testInput)) {
         return "Is a Number";
     }
 
