@@ -1,3 +1,5 @@
+const { ConsoleReporter } = require('jasmine');
+
 // Write your helper functions here!
 require('isomorphic-fetch');
 
@@ -31,6 +33,7 @@ function validateInput(testInput) {
 }
 
 
+
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     // document.getElementById("list").style.visibility = "hidden"
     let pilotStatus = document.getElementById("pilotStatus")
@@ -38,15 +41,30 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let fuelStatus = document.getElementById("fuelStatus")
     let cargoStatus = document.getElementById("cargoStatus")
     let launchStatus = document.getElementById("launchStatus");
-    list.style.visibility = "hidden";
+    // list.style.visibility = "hidden";
 
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
-        window.alert("All fields required!");
+      alert("All fields are required!");
+
+    // if (validateInput(pilot) === "Empty") {
+    //     alert("Co-pilot Name is empty");
+    // }
+
+    // else if (validateInput(copolit) === "Empty") {
+    //     alert("Co-pilot Name is empty");
+    // }
+
+    // else if (validateInput(fuelLevel) === "Empty") {
+    //     alert("Fuel Level is empty");
+    // }
+    // else if (validateInput(cargoLevel) === "Empty") {
+    //     alert("Cargo Mass is empty");
+
         // list.style.visibility = "hidden"
 
 
     } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-       window.alert("Enter valid input for each field"); {
+        window.alert("Enter valid input for each field"); {
             //     list.style.visibility = "hidden"
             // 
         }
