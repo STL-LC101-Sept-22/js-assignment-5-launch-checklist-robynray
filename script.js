@@ -1,6 +1,8 @@
 // Write your JavaScript code here!
 // const { formSubmission, myFetch, addDestinationInfo, pickPlanet } = require("./scriptHelper");
 
+const { myFetch } = require("./scriptHelper");
+
 window.addEventListener("load", function () {
     //  list.style.visibility = "hidden";
     let listedPlanets;
@@ -42,7 +44,7 @@ window.addEventListener("load", function () {
         // } else { 
         // formSubmission().style.visibility = "hidden";
         formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel)
-
+myFetch()
         // === "Error") {
         // event.preventDefault();
     });
