@@ -1,7 +1,7 @@
 // Write your JavaScript code here!
 // const { formSubmission, myFetch, addDestinationInfo, pickPlanet } = require("./scriptHelper");
 
-const { myFetch } = require("./scriptHelper");
+// const { myFetch } = require("./scriptHelper");
 
 window.addEventListener("load", function () {
     //  list.style.visibility = "hidden";
@@ -32,9 +32,9 @@ window.addEventListener("load", function () {
         let copilotInput = document.querySelector("input[name=copilotName]");
         let copilot = copilotInput.value;
         let fuelLevelInput = document.querySelector("input[name=fuelLevel]");
-        let fuelLevel = Number(fuelLevelInput.value);
+        let fuelLevel =  parseInt(fuelLevelInput.value);
         let cargoLevelInput = document.querySelector("input[name=cargoMass]");
-        let cargoLevel = Number(cargoLevelInput.value);
+        let cargoLevel = parseInt(cargoLevelInput.value);
 
         // let launchStatus = docoument.getElementById("launchStatus");
 
@@ -44,7 +44,7 @@ window.addEventListener("load", function () {
         // } else { 
         // formSubmission().style.visibility = "hidden";
         formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel)
-myFetch()
+
         // === "Error") {
         // event.preventDefault();
     });

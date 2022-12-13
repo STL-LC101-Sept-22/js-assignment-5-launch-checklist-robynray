@@ -64,7 +64,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
 
     } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-        window.alert("Enter valid input for each field"); {
+       alert("Enter valid input for each field"); {
             //     list.style.visibility = "hidden"
             // 
         }
@@ -79,7 +79,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             list.style.visibility = "hidden";
             fuelStatus.innerHTML = "Fuel level high enough for launch";
             launchStatus.innerHTML = "Shuttle is Ready for Launch";
-            launchStatus.style.color = "rgb(65, 159, 106)";
+            launchStatus.style.color = "rgb(65, 159, 106)";3
         }
         if (fuelLevel < 10000) {
             list.style.visibility = "visible";
